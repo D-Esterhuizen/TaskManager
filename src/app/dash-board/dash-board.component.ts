@@ -38,7 +38,7 @@ export class DashboardComponent
     this.AvailableFunds = 62985;
     
 
-    this.Clients = [
+    this.Clients = [//heres where the clients is bound
       'Poontang Patrol',
       'Jerkmate ',
       'Gooners Pty Ltd',
@@ -49,7 +49,7 @@ export class DashboardComponent
     for (var i = 2025; i >= 2015; i--)
     {
       this.Years.push(i);
-    }
+    }//this makes yeasrs in a list for every year since 2015
   }
 
 
