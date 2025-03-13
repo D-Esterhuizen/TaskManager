@@ -57,3 +57,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## General Running
+Run this in terminal CMD
+ ```bash
+npm i
+```
+
+ ```bash
+API 2 is important for the Sem test
+```
+ng serve 
+
