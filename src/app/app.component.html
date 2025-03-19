@@ -1,36 +1,27 @@
-<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+<nav class="navbar navbar-expand-sm navbar-dark custom-navbar">
   <a class="navbar-brand" href="#"> FGNR Task Manager </a>
   <button
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
     data-target="#mynav"
+    title="Toggle navigation"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="mynav">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link"routerLink="dashboard">Dashboard</a>
+        <a class="nav-link" routerLink="productPage">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="about">About</a>
+        <a class="nav-link" routerLink="addProduct">Add Product</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="search"
-            ><i class="fa fa-search"></i
-          ></span>
-        </div>
-        <input type="text" class="form-control" placeholder="Search" />
-      </div>
-      <button class="btn btn-warning my2- my-sm-0" type="button">Search</button>
-    </form>
+    
   </div>
 </nav>
 
-<div class ="container-fluid">
+<div class="container-fluid">
   <router-outlet></router-outlet>
 </div>

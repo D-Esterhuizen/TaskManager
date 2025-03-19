@@ -1,0 +1,53 @@
+.custom-navbar {
+  background-color: #000000; 
+  
+  margin-bottom: 1rem;
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: bold;
+  color: #fff;
+}
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ff0000 !important;
+}
+
+.input-group .form-control,
+.input-group .input-group-text,
+.cbrutalist-card__button.brutalist-card__button--mark {
+  border-radius: 0 !important;
+  margin-right: 0.5rem;; 
+}
+
+.custom-navbar .brutalist-card__button .form-inline {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 5px 5px 0 #000;
+  overflow: hidden;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.brutalist-card__button--mark:hover {
+  background-color: #296fbb;
+  border-color: #296fbb;
+  color: #fff;
+  box-shadow: 5px px 0 #004280;
+}
+

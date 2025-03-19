@@ -1,0 +1,32 @@
+<div *ngIf="loading" class="loader-container">
+  <div class="🤚">
+    <div class="👉"></div>
+    <div class="👉"></div>
+    <div class="👉"></div>
+    <div class="👉"></div>
+    <div class="🌴"></div>		
+    <div class="👍"></div>
+  </div>
+</div>
+
+<div *ngIf="!loading && products.length > 0" class="card-container">
+  <div *ngFor="let product of products" class="card">
+    <div class="brutalist-card">
+      <div class="brutalist-card__header">
+        <div class="brutalist-card__alert">{{ product.productName }}</div>
+      </div>
+      <div class="brutalist-card__message">
+        {{ product.productDescription }}
+        <p>Price: {{ product.productPrice | currency }}</p>
+      </div>
+      <div class="brutalist-card__actions">
+        <a class="brutalist-card__button brutalist-card__button--mark" [routerLink]="['/edit-product', product.productId]">Edit</a>
+        <a class="brutalist-card__button brutalist-card__button--read" href="#" (click)="deleteProduct(product.productId)">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="products.length === 0">
+  No products available.
+</div>
+

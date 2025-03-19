@@ -1,0 +1,20 @@
+
+<div class="container">
+    <h2 class="brutalist-header" >Edit Product</h2>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="productName" class="brutalist-Label">Product Name</label>
+        <input id="productName" class="form-control brutalist-textarea" formControlName="productName">
+      </div>
+      <div class="form-group">
+        <label for="productDescription" class="brutalist-Label">Product Description</label>
+        <textarea id="productDescription" class="form-control brutalist-textarea" formControlName="productDescription"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="productPrice" class="brutalist-Label" >Product Price</label>
+        <input id="productPrice" type="number" class="form-control brutalist-textarea" formControlName="productPrice">
+      </div>
+      <button type="submit" class="brutalist-card__button brutalist-card__button--mark" [disabled]="productForm.invalid">Save</button>
+      <a class="brutalist-card__button brutalist-card__button--read" [routerLink]="['/productPage']">Cancel</a>
+    </form>
+  </div>
